@@ -1,8 +1,13 @@
-import routher from "./routher"
+import router from "./router.js"
+import Navbar from  "./components/Navbar.js"
 
 new Vue({
   el:"#app",
-  template:"<router-view />",
-  routher,
+  template:
+  '<div> <Navbar /> <router-view />  </div>',
+  router:router,
+  components:{
+    Navbar,
+  },
 
 })
